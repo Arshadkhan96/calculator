@@ -4,78 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container{
-            background-color: bisque;
-            width: 450px;
-            margin: auto;
-            padding: auto;
-        }
-        input[type=text]{
-            width: 300px;
-            height: 30px;
-            border: none;
-            outline: none;
-            font-size: large;
-            color: black;
-        }
-        input[type=button]{
-            padding: 10px 35px;
-            border: none;
-            background-color: black;
-            color: white;
-            font-size: large;
-        }
-        input[type=button]:hover{
-            background-color: white;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-
-
     <center>
-    <h1>CALCULATOR APP</h1>
-    <div class="container">
+        <h1>BASIC CALCULATOR</h1>    
+        <input type="text"  id="result" readonly>
+        <input type="button" value="C" id="clearAll">
+        <div>
+            <input type="button" value="1" id="btn1">
+            <input type="button" value="2" id="btn2">
+            <input type="button" value="3" id="btn3">
+            <input type="button" value="4" id="btn4">
 
-        <table width="400" height="300" id="calc">
-            <tr>
-                <td colspan="3"><input type="text" id="result"></td>
-                <td><input type="button" value="C" onclick="clears()"></td>
-            </tr>
-            <tr>
-                <td><input type="button" onkeydown="myCal(event)" value="1" onclick="display('1')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="2" onclick="display('2')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="3" onclick="display('3')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="4" onclick="display('4')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" onkeydown="myCal(event)" value="5" onclick="display('5')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="6" onclick="display('6')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="7" onclick="display('7')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="8" onclick="display('8')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" onkeydown="myCal(event)" value="9" onclick="display('9')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="0" onclick="display('0')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="." onclick="display('.')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="+" onclick="display('+')"></td>
-            </tr>
-            <tr>
-                <td><input type="button" onkeydown="myCal(event)" value="-" onclick="display('-')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="*" onclick="display('*')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="/" onclick="display('/')"></td>
-                <td><input type="button" onkeydown="myCal(event)" value="=" onclick="calculate()"></td>
-            </tr>
-        </table>
+        </div>
+        
+        <div>
+            <input type="button" value="5" id="btn5">
+            <input type="button" value="6" id="btn6">
+            <input type="button" value="7" id="btn7">
+            <input type="button" value="8" id="btn8">
+        </div>
+        <div>
+            
+            <input type="button" value="9" id="btn9">
+            <input type="button" value="0" id="btn0">
+            <input type="button" value="." id="btnDot">
+            <input type="button" value="+" id="btnAdd">
+        </div>
 
-
-    </div>
-</center>
-
-
-<script src="script.js"></script>
+        <div>
+            
+            <input type="button" value="-" id="btnSub">
+            <input type="button" value="*" id="btnMulti">
+            <input type="button" value="/" id="btnDivide">
+            <input type="button" value="=" id="btnEqual">
+        </div>
+    </center>
+    <script src="index1.js"></script>
     
 </body>
 </html>
